@@ -1,0 +1,165 @@
+:root {
+  font:
+    15px -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    sans-serif;
+  color: #202020;
+  background: #fafafa;
+  color-scheme: light dark;
+}
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+}
+main {
+  max-width: 760px;
+  margin: 48px auto;
+  padding: 0 24px 60px;
+}
+.back {
+  color: #666;
+  text-decoration: none;
+}
+header {
+  margin: 36px 0 24px;
+}
+h1 {
+  font-size: 30px;
+  margin: 0 0 10px;
+  letter-spacing: -0.8px;
+}
+h2 {
+  font-size: 18px;
+  margin: 0 0 5px;
+}
+p {
+  color: #737373;
+  line-height: 1.65;
+  margin: 8px 0 18px;
+}
+.card {
+  background: #fff;
+  border: 1px solid #e8e8e8;
+  border-radius: 20px;
+  padding: 24px;
+  margin-bottom: 18px;
+}
+.row {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+}
+.row p {
+  margin: 0;
+}
+.mark {
+  width: 46px;
+  height: 46px;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  display: grid;
+  place-items: center;
+  font: bold 30px Georgia;
+  color: #111;
+}
+.calendar {
+  font-family: system-ui;
+  color: #2878e2;
+}
+button {
+  border: 0;
+  border-radius: 22px;
+  background: #222;
+  color: #fff;
+  padding: 10px 20px;
+  font: 500 14px inherit;
+  cursor: pointer;
+}
+button:disabled {
+  opacity: 0.5;
+  cursor: wait;
+}
+.secondary {
+  background: #eee;
+  color: #333;
+}
+details {
+  margin-top: 20px;
+  color: #555;
+}
+summary {
+  cursor: pointer;
+  font-size: 13px;
+}
+form {
+  margin-top: 18px;
+}
+label {
+  display: block;
+  font-size: 13px;
+  margin: 10px 0;
+}
+input[type="password"] {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  background: #fafafa;
+  font: inherit;
+}
+form p,
+.notice {
+  font-size: 12px;
+}
+.notice {
+  margin: 14px 0 0;
+}
+pre {
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+  padding: 16px;
+  background: #f5f5f5;
+  border-radius: 12px;
+  font: 14px/1.65 inherit;
+}
+.actions {
+  display: flex;
+  gap: 10px;
+}
+.error {
+  color: #bd4141;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    background: #111;
+    color: #eee;
+  }
+  .card {
+    background: #191919;
+    border-color: #333;
+  }
+  p {
+    color: #aaa;
+  }
+  button {
+    background: #eee;
+    color: #171717;
+  }
+  input[type="password"],
+  pre {
+    background: #252525;
+    color: #eee;
+    border-color: #444;
+  }
+  .mark {
+    color: #eee;
+    border-color: #444;
+  }
+  .secondary {
+    background: #333;
+    color: #eee;
+  }
+}

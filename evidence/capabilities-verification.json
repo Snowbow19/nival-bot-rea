@@ -1,0 +1,55 @@
+{
+  "verifiedAt": "2026-10-13T04:28:28.474183+00:00",
+  "implementationVersion": "0.3.0",
+  "realModel": "DeepSeek official API / deepseek-flash",
+  "naturalLanguageGroup": {
+    "name": "产品协作",
+    "memberCount": 2,
+    "persisted": true
+  },
+  "memorySkillTaskArtifact": {
+    "createdAndReadBack": true
+  },
+  "singleRoutine": {
+    "name": "单次验证",
+    "runCount": 1,
+    "enabled": false,
+    "status": "completed"
+  },
+  "downloadAndPreview": {
+    "file": "接口资料.md",
+    "browserDownloaded": true,
+    "previewRendered": true,
+    "bytes": 878
+  },
+  "textAttachment": {
+    "bytes": 56,
+    "realModelReadContent": true
+  },
+  "externalConnections": {
+    "notion": {
+      "oauthAuthorized": true,
+      "discoveredTools": 49,
+      "realSearchFoundActionGuide": true,
+      "chatFlowVerified": true
+    },
+    "calendar": {
+      "permission": "full_access",
+      "readCalendarCount": 10,
+      "chatFlowVerified": true
+    },
+    "writesPerformed": false
+  },
+  "targetedAutomatedChecks": {
+    "passed": 7,
+    "failed": 0
+  },
+  "limitations": [
+    "Cloud computer excluded",
+    "External writes implemented but no live write test",
+    "Calendar update/delete not implemented",
+    "Voice and image/video generation not connected",
+    "Binary document extraction not implemented",
+    "Scheduler requires running local service"
+  ]
+}

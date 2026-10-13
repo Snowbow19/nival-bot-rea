@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0"><dict>
+<key>CFBundleIdentifier</key><string>local.nival.bot.calendar</string>
+<key>CFBundleName</key><string>Nival Bot Calendar</string>
+<key>CFBundleDisplayName</key><string>Nival Bot 日历</string>
+<key>CFBundleVersion</key><string>1</string>
+<key>NSCalendarsFullAccessUsageDescription</key><string>在你确认后读取日历、检查时间冲突并创建日程。</string>
+<key>NSCalendarsUsageDescription</key><string>在你确认后读取日历、检查时间冲突并创建日程。</string>
+</dict></plist>

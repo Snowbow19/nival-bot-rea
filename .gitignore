@@ -1,0 +1,14 @@
+node_modules/
+.codegraph/
+.env
+.env.*
+!.env.example
+*.zip
+.DS_Store
+extracted/
+data/
+dist/
+evidence/*
+!evidence/rea-summary.json
+!evidence/capabilities-verification.json
+!evidence/readable-build.json

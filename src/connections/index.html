@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>连接应用 · Nival Bot</title>
+    <link rel="stylesheet" href="/connections/style.css" />
+  </head>
+  <body>
+    <main>
+      <a class="back" href="/">← 返回聊天</a>
+      <header>
+        <h1>连接应用</h1>
+        <p>把你的页面和日程带入工作空间。</p>
+      </header>
+      <section class="card">
+        <div class="row">
+          <div class="mark">N</div>
+          <div>
+            <h2>Notion</h2>
+            <p id="notion-status">正在检查连接…</p>
+          </div>
+        </div>
+        <p>查找和阅读页面。创建或追加内容前，你可以检查目标和正文。</p>
+        <button id="notion-connect">连接 Notion</button>
+        <details>
+          <summary>使用集成密钥</summary>
+          <form id="token-form">
+            <label for="notion-token">Notion 集成密钥</label
+            ><input
+              id="notion-token"
+              type="password"
+              autocomplete="off"
+              spellcheck="false"
+              required
+            />
+            <p>只保存在本机。请在 Notion 中将需要访问的页面共享给对应集成。</p>
+            <button type="submit">验证并连接</button>
+          </form>
+        </details>
+        <p class="notice" id="notion-notice"></p>
+      </section>
+      <section class="card">
+        <div class="row">
+          <div class="mark calendar">▦</div>
+          <div>
+            <h2>日历</h2>
+            <p id="calendar-status">正在检查连接…</p>
+          </div>
+        </div>
+        <p>
+          访问这台 Mac
+          已添加的日历账户，查询日程与空闲时间。创建日程前会检查冲突并请你确认。
+        </p>
+        <button id="calendar-connect">授权日历访问</button>
+        <p class="notice" id="calendar-notice"></p>
+      </section>
+      <section id="approval" class="card" hidden>
+        <h2>确认操作</h2>
+        <p id="approval-target"></p>
+        <pre id="approval-content"></pre>
+        <label id="conflict-control" hidden
+          ><input
+            type="checkbox"
+            id="allow-conflicts"
+          />我已查看冲突，仍要创建</label
+        >
+        <div class="actions">
+          <button id="approve">确认写入</button
+          ><button class="secondary" id="reject">取消</button>
+        </div>
+        <p id="approval-status"></p>
+      </section>
+      <p role="status" id="status"></p>
+    </main>
+    <script src="/connections/app.js"></script>
+  </body>
+</html>

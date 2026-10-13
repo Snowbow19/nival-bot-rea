@@ -1,0 +1,65 @@
+{
+  "evidence_id": "ev_5e043f13724e2ea834912bb41e552d7f545518afe79187a3a136eed470506c05",
+  "root_sha256": "8dd7b6c4a58439d626a9a7b3766982b7c725db2bc1f6ff68a29fc1ec62ca4cf7",
+  "statistics": {
+    "relevant_files": 616,
+    "nested_asar_containers": 0,
+    "text_bytes_read": 41155737,
+    "invalid_utf8_files": 0,
+    "parsed_javascript_files": 600,
+    "visited_ast_nodes": 7074090,
+    "findings": 5374,
+    "modules": 0,
+    "parse_failures": 0
+  },
+  "summary": {
+    "browser_windows": 4,
+    "explicit_web_preferences": 11,
+    "preload_entrypoints": 0,
+    "context_bridge_apis": 6,
+    "exposed_api_members": 0,
+    "ipc": {
+      "operations": 15,
+      "literal_channels": 2,
+      "dynamic_channel_operations": 13,
+      "renderer_transmissions": 5,
+      "renderer_listeners": 4,
+      "main_handlers": 6,
+      "paired_renderer_transmissions": 0,
+      "ambiguous_renderer_transmissions": 0,
+      "unpaired_literal_renderer_transmissions": 1
+    },
+    "sender_validation_observations": 2,
+    "utility_processes": 2,
+    "resolved_utility_entrypoints": 0,
+    "native_addon_bindings": 2,
+    "resolved_native_addon_bindings": 2
+  },
+  "node_kinds": {
+    "asar-entry": 616,
+    "javascript-asset": 600,
+    "unknown": 1084,
+    "ipc-handler": 4,
+    "endpoint": 239,
+    "javascript-module": 236,
+    "worker": 2,
+    "native-addon": 4,
+    "electron-main": 8,
+    "ipc-channel": 9,
+    "artifact": 13,
+    "context-bridge-api": 6,
+    "package": 8,
+    "electron-renderer": 2,
+    "native-export": 2
+  },
+  "integrity_contradictions": [
+    "dist/deps/cursor-proclist/build/Release/cursor_proclist.node",
+    "dist/deps/sand-notification-settings/build/Release/sand_notification_settings.node",
+    "dist/deps/tree-sitter-bash/prebuilds/darwin-arm64/tree-sitter-bash.node",
+    "dist/deps/tree-sitter/build/Release/tree_sitter_runtime_binding.node",
+    "dist/native/sand-op-launcher",
+    "dist/native/sand-webauthn-signer"
+  ],
+  "limitations_count": 1101,
+  "semantic_complete": false
+}
